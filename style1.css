@@ -1,3 +1,19 @@
+/* все медиа пишутся в самом низу стр */
+/* обрати внимаие на стр и ее название эти все блоки являются одним тематическим разделом с добавлеим доп. еэлементов
+стр называется - testimonail, все секции можно назвать section-testimonal
+и потом модифицировать секции с помощью приставок
+class="section-testimonail"
+class="section-testimonail section-testimonail--with-post"
+class="section-testimonail section-testimonail--simple"
+class="section-testimonail section-testimonail--secondary"
+class="section-testimonail section-testimonail--simple-with-image"
+
+от этих приставок изменять позиции и отсупы
+если глянуть на другие стр то моэно понять что контент в testimonail больше нигде не юзается, поэтому 
+базовые элементы секций стиль от класса - section-testimonail и добавляй элементам классы с
+приставкой названия твоей секции e.g section-testimonail__heading, section-testimonail__text, section-testimonail__image
+*/
+
 *,
 *::before,
 *::after {
@@ -6,17 +22,18 @@
 
 
 a {
-    text-decoration: none;
+    text-decoration: none; /* лучше оставить, подчеркивание, это для того чтоб ссылки явно выделялись в дефолтном контенте */
     color: inherit;
-    display: block;
+    display: block; /* это не нужно делать, если ты закинешь ссылку в текст у тебя все поломается */
+    /* лучше поставить display: inline-block */
 }
 
 html,
 body {
-    /* height: 100%; это нахуя?? */
+    /* height: 100%; это нахуя?? - это тебе не нужно можешь удалить */ 
     font-family: Montserrat;
-    font-size: 36px;
-    line-height: 140%;
+    font-size: 36px; /* пока лучше убрать это, если придется делать другие стр по этот размер будет все портить, в body ты должен ставить размер базового текста по умолчанию например чтоб создать тег <p> и не добавлять в него всякие классы */ 
+    line-height: 140%; /* так лучше не делать, старайся юзать em, почитай про это, относительниые единицы в css */ 
     font-weight: 400;
     color: #000000;
     background-color: #E5E5E5;
@@ -33,9 +50,15 @@ section {
     margin-bottom: 80px;
 }
 
+.wrapper {
+    overflow: hidden;
+    padding-top: 80px;
+}
+
+
 
 @media (max-width: 992px) {
-    [class*="__container"] {
+    [class*="__container"] { 
         padding: 80px 40px;
     }
     section {
@@ -65,7 +88,7 @@ section {
 
 .title {
     font-size: 48px;
-    line-height: 140%;
+    line-height: 1.5;  /* 1.5em = 72px / 48px  72px line-height из диза, так понятнее и удобнее чем в процентах */
     margin: 0 0 30px 0;
 }
 
@@ -211,6 +234,7 @@ section {
 
 /* ---------------------good2-section--------------------------------------- */
 
+/* не пиши good2, лучше написать good-second цифры писать можно, но это не к чему, старайся обходится без них */
 .good2__image-container {
     justify-content: center;
     max-width: 1100px;
