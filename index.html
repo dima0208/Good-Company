@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">  <!-- DONE (Файл scss не подключается) не нужно добавлять цифры, это не к чему, переименуй в style.scss и раздикай файлы по соотв. папкам -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+</head>
+<body>
+    <!-- DONE удобнее если писать класс для секции с приставкой section, e.g - section-good, section-company   -->
+    <!-- DONE создай класс container и переиспользуй его для всех секций [class*="__container"]  такая запись сложна и может только запутать  -->
+    <!-- DONE все элементы subtitle в секциях имеют одинаковые стили, создай один класс, добавь стили оберни текст в <p>  -->
+    <div class="wrapper">
+        <main class="main">
+            <section class="section-good">
+                <div class="good__container _container">
+                    <div class="text-content">
+                        <h2 class="title">You’re in good company</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="good__image-container image-container">
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a> <!-- Ок, а зачем? по умолчанию в сылку ставь # -->
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a> 
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img class="" src="img/Small.png" alt="img1">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-company">
+                <div class="company__container _container">
+                    <div class="company__content-left">
+                        <div class="text-content">
+                            <h2 class="title">You’re in good company</h2>
+                            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                        </div>
+                        <div class="company__image-container image-container">
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                            <a class="small-image" href="#"><img class="" src="img/Small.png" alt="img1"></a>
+                        </div>
+                    </div>
+                    <div class="company__content-right">
+                        <a class="big-image" href="#"><img class="big-image__image" src="img/Big.png" alt="img2"></a>
+                        <div class="content-right__text-container">
+                            <h4 class="bold-text">Sed ut perspiciatis unde omnis</h4>
+                            <p class="small-text">
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                                aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                nesciunt. Neque porro quisquam est, qui
+                                dolorem ipsum quia dolor sit amet
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-unnamed">
+                <div class="unnamed__container _container">
+                    <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    <div class="unnamed__content">
+                        <a href="#"> <img src="img/unnamed-section01.png" alt="just-cross"></a>
+                        <p class="small-text">Nemo enim ipsam</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-good-second">
+                <div class="good__container _container">
+                    <div class="text-content">
+                        <h2 class="title">You’re in good company</h2>
+                        <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                    </div>
+                    <div class="good-second__image-container image-container">
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1"> <!-- DONE class="" если нет класса то удали не нужный атрибут -->
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img  src="img/Small.png" alt="img1">
+                        </a>
+                        <a class="small-image" href="#">
+                            <img src="img/Small.png" alt="img1">
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-last">
+                <!-- DONE добавь внутренние отступы для блока в котором контент, если добавить много текст будет такое - https://prnt.sc/KZdpukMuEMRd -->
+                <div class="last__container _container">
+                    <div class="last__content-left">
+                        <p class="subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore  Lorem ipsum dolor sit amet.
+                        </p>
+                        <!-- ЭТО БЫЛО нужно добавить выравнивание по горизонтали align-items: center -->
+                        <div class="last__content">
+                            <a class="last-icon" href="#"> <img src="img/unnamed-section01.png" alt="just-cross"></a>
+                            <p class="small-text">Nemo enim ipsam</p>
+                        </div>
+                    </div>
+                    <div class="last__content-right">
+                        <a class="last-link" href="#"><img class="last-image" src="https://www.meme-arsenal.com/memes/e20366d18ab324e7c47696d2435e9d29.jpg" alt="last"></a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
