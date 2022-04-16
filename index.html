@@ -5,13 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style/style.css">  <!-- DONE (Файл scss не подключается) не нужно добавлять цифры, это не к чему, переименуй в style.scss и раздикай файлы по соотв. папкам -->
+    <link rel="stylesheet" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 </head>
 <body>
-    <!-- DONE удобнее если писать класс для секции с приставкой section, e.g - section-good, section-company   -->
-    <!-- DONE создай класс container и переиспользуй его для всех секций [class*="__container"]  такая запись сложна и может только запутать  -->
-    <!-- DONE все элементы subtitle в секциях имеют одинаковые стили, создай один класс, добавь стили оберни текст в <p>  -->
     <div class="wrapper">
         <main class="main">
             <section class="section-good">
@@ -23,7 +20,7 @@
                     <div class="good__image-container image-container">
                         <a class="small-image" href="#">
                             <img class="" src="img/Small.png" alt="img1">
-                        </a> <!-- Ок, а зачем? по умолчанию в сылку ставь # -->
+                        </a>
                         <a class="small-image" href="#">
                             <img class="" src="img/Small.png" alt="img1">
                         </a>
@@ -89,7 +86,7 @@
                     </div>
                     <div class="good-second__image-container image-container">
                         <a class="small-image" href="#">
-                            <img src="img/Small.png" alt="img1"> <!-- DONE class="" если нет класса то удали не нужный атрибут -->
+                            <img src="img/Small.png" alt="img1">
                         </a>
                         <a class="small-image" href="#">
                             <img src="img/Small.png" alt="img1">
@@ -116,14 +113,12 @@
                 </div>
             </section>
             <section class="section-last">
-                <!-- DONE добавь внутренние отступы для блока в котором контент, если добавить много текст будет такое - https://prnt.sc/KZdpukMuEMRd -->
                 <div class="last__container _container">
                     <div class="last__content-left">
                         <p class="subtitle">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                             do eiusmod tempor incididunt ut labore  Lorem ipsum dolor sit amet.
                         </p>
-                        <!-- ЭТО БЫЛО нужно добавить выравнивание по горизонтали align-items: center -->
                         <div class="last__content">
                             <a class="last-icon" href="#"> <img src="img/unnamed-section01.png" alt="just-cross"></a>
                             <p class="small-text">Nemo enim ipsam</p>

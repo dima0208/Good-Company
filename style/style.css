@@ -1,21 +1,3 @@
-/* "НЕ БУДУ" все медиа пишутся в самом низу стр */
-
-
-
-/* обрати внимаие на стр и ее название эти все блоки являются одним тематическим разделом с добавлеим доп. еэлементов
-стр называется - testimonail, все секции можно назвать section-testimonal
-и потом модифицировать секции с помощью приставок
-class="section-testimonail"
-class="section-testimonail section-testimonail--with-post"
-class="section-testimonail section-testimonail--simple"
-class="section-testimonail section-testimonail--secondary"
-class="section-testimonail section-testimonail--simple-with-image"
-от этих приставок изменять позиции и отсупы
-если глянуть на другие стр то моэно понять что контент в testimonail больше нигде не юзается, поэтому 
-базовые элементы секций стиль от класса - section-testimonail и добавляй элементам классы с
-приставкой названия твоей секции e.g section-testimonail__heading, section-testimonail__text, section-testimonail__image
-*/ /* ---------ОК-Структура примерно понятна, тут не буду уже трогать--------------------------------------- */
-
 *,
 *::before,
 *::after {
@@ -24,18 +6,15 @@ class="section-testimonail section-testimonail--simple-with-image"
 
 
 a {
-    /* text-decoration: none; DONE лучше оставить, подчеркивание, это для того чтоб ссылки явно выделялись в дефолтном контенте */
     color: inherit;
-    display: inline-block; /* DONE это не нужно делать, если ты закинешь ссылку в текст у тебя все поломается */
-    /* лучше поставить display: inline-block */
+    display: inline-block;
 }
 
 
 html,
 body {
     font-family: Montserrat;
-    /* font-size: 36px;  DONE пока лучше убрать это, если придется делать другие стр по этот размер будет все портить, в body ты должен ставить размер базового текста по умолчанию например чтоб создать тег <p> и не добавлять в него всякие классы  */
-    line-height: 1.4; /* DONE так лучше не делать, старайся юзать em, почитай про это, относительниые единицы в css */ 
+    line-height: 1.4;
     font-weight: 400;
     color: #000000;
     background-color: #68a7f9;
@@ -91,7 +70,7 @@ section {
 .title {
     font-size: 48px;
     font-weight: 400;
-    line-height: 1.5;  /* DONE вася DONE 1.5em = 72px / 48px  72px line-height из диза, так понятнее и удобнее чем в процентах */
+    line-height: 1.5;
     margin: 0 0 30px 0;
 }
 
@@ -242,7 +221,6 @@ section {
 
 /* ---------------------good-second-section--------------------------------------- */
 
-/* DONE не пиши good2, лучше написать good-second цифры писать можно, но это не к чему, старайся обходится без них */
 .good-second__image-container {
     justify-content: center;
     max-width: 1100px;
@@ -334,6 +312,3 @@ width: 100%;
         margin: 0 10px 0 0;
     }
 }
-
-
-/* 1) Можно ли переиспользовать секции как в примере section-good-second? */
